@@ -30,7 +30,29 @@
                 <RowDefinition />
             </Grid.RowDefinitions>
         </Grid>
-        <ScrollViewer HorizontalAlignment="Left" Height="642" Margin="474,48,0,0" VerticalAlignment="Top" Width="378"/>
+        <Grid x:Name="grid2" HorizontalAlignment="Left" Height="679" Margin="418,48,0,0" VerticalAlignment="Top" Width="380" Background="#FFECECEC" Uid="grid1" 
+              >
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+        </Grid>
 
     </Grid>
 </Window>

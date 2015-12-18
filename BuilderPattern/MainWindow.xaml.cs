@@ -18,12 +18,17 @@ namespace BuilderPattern
         {
             InitializeComponent();
              
-
+        
             SignUpFormDirector director = new SignUpFormDirector();
             director.SetFormBuilder(new CateringCompanyFormBuilder());
             director.ConstructForm("Royal Catering Company Signup Form");
-            director.AddSignupFormToGrid(grid1); 
-            
+            director.AddSignupFormToGrid(grid1);
+
+            director.SetFormBuilder(new RSVPFormBuilder());
+            director.ConstructForm("RSVP Form");
+            director.AddSignupFormToGrid(grid2); 
+             
+
         }
     }
 }

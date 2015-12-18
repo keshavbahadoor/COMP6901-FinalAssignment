@@ -65,6 +65,7 @@
     </Compile>
     <Compile Include="application\FormBuilder.cs" />
     <Compile Include="application\CateringCompanyFormBuilder.cs" />
+    <Compile Include="application\RSVPFormBuilder.cs" />
     <Compile Include="application\SignUpForm.cs" />
     <Compile Include="application\SignUpFormDirector.cs" />
     <Compile Include="MainWindow.xaml.cs">
