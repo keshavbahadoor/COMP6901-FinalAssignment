@@ -13,9 +13,8 @@ namespace VisitorPattern.application
     /// </summary>
     interface IControlVisitor
     {
-        void Visit(TextBlock textBlock);
-        void Visit(CustomTextBox customTextBox);
-        void Visit(Button button);
-        void Visit(Label label); 
+        void Visit(CustomButton textBlock);
+        void Visit(CustomTextBox customTextBox); 
+        void Visit(CustomLabel label); 
     }
 }

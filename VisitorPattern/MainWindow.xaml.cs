@@ -21,22 +21,35 @@ namespace VisitorPattern
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {
+    { 
+        private IControlVisitor redBrushVisitor;
+        private IControlVisitor blueBrushVisitor;
+        private CustomGridElement grid; 
+
         public MainWindow()
         {
             InitializeComponent();
 
-            // init elements 
-            IControlElement customTextBox = new CustomTextBox();
-            customTextBox.GetControl().Width = ElementGrid.Width / 2;
-            Grid.SetRow(customTextBox.GetControl(), 1);
-            ElementGrid.Children.Add(customTextBox.GetControl());
+            grid = new CustomGridElement(ElementGrid);
 
             // init visitors 
-            IControlVisitor controlWarningVisitor = new ControlWarningVisitor();
+            redBrushVisitor = new RedBrushVisitor();
+            blueBrushVisitor = new BlueBrushVisitor(); 
+        }
 
-            // visit 
-            customTextBox.Accept(controlWarningVisitor); 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void redbutton_Click(object sender, RoutedEventArgs e)
+        {
+            grid.Accept(redBrushVisitor);
+        }
+
+        private void bluebutton_Click(object sender, RoutedEventArgs e)
+        {
+            grid.Accept(blueBrushVisitor);
         }
     }
 }

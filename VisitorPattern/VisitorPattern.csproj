@@ -63,7 +63,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="application\ControlWarningVisitor.cs" />
+    <Compile Include="application\BlueBrushVisitor.cs" />
+    <Compile Include="application\customUI\CustomButton.cs" />
+    <Compile Include="application\RedBrushVisitor.cs" />
+    <Compile Include="application\customUI\CustomGridElement.cs" />
+    <Compile Include="application\customUI\CustomLabel.cs" />
     <Compile Include="application\customUI\CustomTextBox.cs" />
     <Compile Include="application\IControlElement.cs" />
     <Compile Include="application\IControlVisitor.cs" />

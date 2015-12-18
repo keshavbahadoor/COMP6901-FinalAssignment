@@ -7,7 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="768" Width="1024">
     <Grid>
-        <Grid x:Name="ElementGrid" HorizontalAlignment="Left" Height="717" Margin="10,10,0,0" VerticalAlignment="Top" Width="996" Background="#FF9C9C9C"/>
+        <Grid x:Name="ElementGrid" HorizontalAlignment="Left" Height="634" Margin="10,93,0,0" VerticalAlignment="Top" Width="996" Background="#FF9C9C9C"/>
+        <Button x:Name="redbutton" Content="Visit With Red Brush" HorizontalAlignment="Left" Margin="10,21,0,0" VerticalAlignment="Top" Width="453" Height="55" Background="#FFE8AFAF" Click="redbutton_Click"/>
+        <Button x:Name="bluebutton" Content="Visit With Blue Brush" HorizontalAlignment="Left" Margin="525,21,0,0" VerticalAlignment="Top" Width="481" Height="55" Background="#FF6AA6EE" Click="bluebutton_Click"/>
 
     </Grid>
 </Window>

@@ -12,16 +12,12 @@ namespace VisitorPattern.application
     /// <summary>
     /// This visitor changes the color of the current GUI control to warn the user 
     /// </summary>
-    class ControlWarningVisitor : IControlVisitor
+    class RedBrushVisitor : IControlVisitor
     {
-        public void Visit(Button button)
+        
+        public void Visit(CustomLabel label)
         {
-            throw new NotImplementedException();
-        }
-
-        public void Visit(Label label)
-        {
-            throw new NotImplementedException();
+            label.GetControl().Background = Brushes.LightPink;
         }
 
         public void Visit(CustomTextBox customTextBox)
@@ -29,9 +25,9 @@ namespace VisitorPattern.application
             customTextBox.GetControl().Background = Brushes.LightPink; 
         }
 
-        public void Visit(TextBlock textBlock)
+        public void Visit(CustomButton button)
         {
-            throw new NotImplementedException();
+            button.GetControl().Background = Brushes.LightPink;
         }
     }
 }
