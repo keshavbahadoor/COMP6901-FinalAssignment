@@ -55,7 +55,7 @@ namespace COMP6901_FinalAssignment
                     return;
                 }              
 
-                Shape shape = (Shape) shapeFactory.GetSystemShape(shapeType.Text, height, width,  colorComboBox.Text, "Black");                
+                Shape shape = (Shape) shapeFactory.CreateSystemShape(shapeType.Text, height, width,  colorComboBox.Text, "Black");                
                 Canvas.Children.Add(shape); 
                 Canvas.SetTop(shape, Mouse.GetPosition(Canvas).Y);
                 Canvas.SetLeft(shape, Mouse.GetPosition(Canvas).X);                 

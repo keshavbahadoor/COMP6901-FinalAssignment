@@ -39,7 +39,7 @@ namespace COMP6901_FinalAssignment.application
         /// <param name="fillColor">The inside color of the shape</param>
         /// <param name="strokeColor">The border or outer color of the shape</param>
         /// <returns>intialized shape object</returns>
-        public Shape GetSystemShape(string shapeName, int height, int width, string fillColorName, string strokeColorName)
+        public Shape CreateSystemShape(string shapeName, int height, int width, string fillColorName, string strokeColorName)
         {
             try
             {
@@ -79,7 +79,7 @@ namespace COMP6901_FinalAssignment.application
         /// <param name="fillColor">The inside color of the shape</param>
         /// <param name="strokeColor">The border or outer color of the shape</param>
         /// <returns>intialized custom shape object</returns>
-        public Shape GetCustomShape(string shapeName, int height, int width, string fillColorName, string strokeColorName)
+        public Shape CreateCustomShape(string shapeName, int height, int width, string fillColorName, string strokeColorName)
         {
             try
             {
